@@ -99,7 +99,8 @@ void test_cycle() {
     int end_value = 0;
     bool found = lab4::find_and_break_cycle(list, &start_value, &end_value);
     check(found && start_value == 4 && end_value == 10, "задание 11: цикл 10 -> 4");
-    check(!lab4::find_and_break_cycle(list, nullptr, nullptr), "задание 11: после разрыва цикла нет");
+    check(!lab4::find_and_break_cycle(list, nullptr, nullptr),
+          "задание 11: после разрыва цикла нет");
     lab4::link_last_to(list, 0);
     found = lab4::find_and_break_cycle(list, &start_value, &end_value);
     check(found && start_value == 1 && end_value == 10, "задание 11: цикл через весь список");

@@ -16,9 +16,7 @@ Planet* new_planet(std::string name, double distance, double mass, double diamet
     return planet;
 }
 
-Planet* create_planet_list() {
-    return new_planet("", 0, 0, 0);
-}
+Planet* create_planet_list() { return new_planet("", 0, 0, 0); }
 
 // Каждый поток - сортированный однонаправленный список: ищем ячейку,
 // после которой вставлять, и вставляем как InsertCell

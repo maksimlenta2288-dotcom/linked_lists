@@ -76,9 +76,7 @@ void run_task2() {
 }
 
 // ---------- Задания 3-6, 8: двунаправленный список ----------
-void print_dlist_header() {
-    std::cout << "операция\tвперёд по next | назад по prev" << std::endl;
-}
+void print_dlist_header() { std::cout << "операция\tвперёд по next | назад по prev" << std::endl; }
 
 void print_dlist_row(const DList* list, std::string op) {
     std::cout << op << "\t";
@@ -144,8 +142,8 @@ void run_task6() {
 void run_task7() {
     std::cout << "Задание 7. Поиск в сортированном списке имён сверху и снизу" << std::endl;
     const int name_count = 10;
-    const std::string names[name_count] = {"Анна",  "Борис", "Вера", "Глеб", "Дарья",
-                                           "Егор",  "Мария", "Олег", "Юлия", "Яна"};
+    const std::string names[name_count] = {"Анна", "Борис", "Вера", "Глеб", "Дарья",
+                                           "Егор", "Мария", "Олег", "Юлия", "Яна"};
     NameList list = make_name_list(names, name_count);
     std::cout << "список: ";
     for (int i = 0; i < name_count; i++) {
